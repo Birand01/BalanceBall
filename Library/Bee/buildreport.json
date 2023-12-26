@@ -1,0 +1,20 @@
+{
+"instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+
+"traceEvents":[
+{ "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
+{ "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
+{ "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
+{ "pid": "Unity", "tid": 1,"ts": 1.7036213445891E+15,"dur": 3616809, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.70362134461727E+15,"dur": 25648, "ph":"X", "name": "Preprocess Player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.70362134467014E+15,"dur": 3512177, "ph":"X", "name": "Prepare For Build"},
+{}
+
+],
+"meta_datetime": "12/26/2023 23:09:08",
+"meta_command_line": "\"C:/Program Files/Unity 2021.3.25f1/Editor/Unity.exe\" -projectpath C:\\Users\\90538\\Desktop\\GithubProjects\\BalanceBall -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-90538 -hubSessionId 361c448c-c4d0-41fc-b4b0-9c42c4ba830e -accessToken F9IqKeVCiYVrY--lhAOyFd8BmdvPrP8fFmSEcN-yz1k011f",
+"meta_command_line_args": "C:/Program Files/Unity 2021.3.25f1/Editor/Unity.exe -projectpath C:\\Users\\90538\\Desktop\\GithubProjects\\BalanceBall -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-90538 -hubSessionId 361c448c-c4d0-41fc-b4b0-9c42c4ba830e -accessToken F9IqKeVCiYVrY--lhAOyFd8BmdvPrP8fFmSEcN-yz1k011f",
+"meta_user_name": "90538",
+"meta_os_version": "Microsoft Windows NT 10.0.19045.0",
+"meta_cpu_count": "16"
+}

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6084501756965562901}
   - component: {fileID: 6084501756965562904}
   - component: {fileID: 6084501756965562907}
+  - component: {fileID: 1055662427}
   m_Layer: 0
   m_Name: Stick1
   m_TagString: Untagged
@@ -128,7 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54db805e07d87e44689ae549ddf90665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatePerClick: 5
 --- !u!114 &6084501756965562907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,4 +141,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6624b3b9de3b140ab267bc665d505c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movePerClick: 2
+--- !u!114 &1055662427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6084501756965562896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8e0a65c5ccba14084b8431a3058285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickSO: {fileID: 11400000, guid: ccdbf5e4c599ffa42bb14f446beb5f3b, type: 2}
