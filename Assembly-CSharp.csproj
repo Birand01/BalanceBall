@@ -56,8 +56,16 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Stick\StickMovement.cs" />
     <Compile Include="Assets\Scripts\Base\ButtonBase.cs" />
+    <Compile Include="Assets\Scripts\Base\StickMovementBase.cs" />
+    <Compile Include="Assets\Scripts\Stick\Rotation.cs" />
+    <Compile Include="Assets\Scripts\Stick\Movement.cs" />
+    <Compile Include="Assets\Scripts\UI\StickControlButtons\UpMovementButton.cs" />
+    <Compile Include="Assets\Scripts\UI\StickControlButtons\DownMovementButton.cs" />
+    <Compile Include="Assets\Scripts\UI\StickControlButtons\RightRotationButton.cs" />
+    <Compile Include="Assets\Scripts\UI\StickControlButtons\LeftRotationButton.cs" />
+    <Compile Include="Assets\Scripts\SO\Stick\StickSO.cs" />
+    <Compile Include="Assets\Scripts\Stick\StickConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -356,7 +356,15 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Base/ButtonBase.cs"
-"Assets/Scripts/Stick/StickMovement.cs"
+"Assets/Scripts/Base/StickMovementBase.cs"
+"Assets/Scripts/SO/Stick/StickSO.cs"
+"Assets/Scripts/Stick/Movement.cs"
+"Assets/Scripts/Stick/Rotation.cs"
+"Assets/Scripts/Stick/StickConfiguration.cs"
+"Assets/Scripts/UI/StickControlButtons/DownMovementButton.cs"
+"Assets/Scripts/UI/StickControlButtons/LeftRotationButton.cs"
+"Assets/Scripts/UI/StickControlButtons/RightRotationButton.cs"
+"Assets/Scripts/UI/StickControlButtons/UpMovementButton.cs"
 -langversion:9.0
 
 /deterministic

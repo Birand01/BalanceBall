@@ -7,24 +7,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public abstract class ButtonBase : MonoBehaviour
 {
-    private CompositeDisposable subscriptions = new CompositeDisposable();
+    
     private Button button;
+    protected int motionSign=1;
 
   
     private void Awake()
     {
         button = GetComponent<Button>();
     }
-    protected virtual void OnEnable()
-    {
-        StartCoroutine(Subscribe());
-    }
-    protected virtual void OnDisable()
-    {
-
-        subscriptions.Clear();
-    }
-
+   
+   
     private void Start()
     {
         button.onClick.AddListener(OnButtonClickEvent);
@@ -32,21 +25,11 @@ public abstract class ButtonBase : MonoBehaviour
 
     private void OnButtonClickEvent()
     {
-        
+        OnButtonEventHandler();
     }
 
-    protected virtual IEnumerator Subscribe()
-    {
-        yield return null;
-
-        this.UpdateAsObservable().Subscribe(x =>
-        {
-          
-        })
-            .AddTo(subscriptions);
-    }
-    public virtual void UpDownMovement() { }
-    public virtual void LeftRightRotation() { }
+    protected abstract void OnButtonEventHandler();
+ 
     protected void IsButtonInteractable(bool state)
     {
         button.interactable = state;
