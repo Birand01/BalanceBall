@@ -366,6 +366,7 @@
 "Assets/Scripts/Base/ButtonBase.cs"
 "Assets/Scripts/Base/InteractionBase.cs"
 "Assets/Scripts/Base/StickMovementBase.cs"
+"Assets/Scripts/GridSpawner/HoleSpawner.cs"
 "Assets/Scripts/Interactions/HoleInteraction.cs"
 "Assets/Scripts/SO/Stick/StickSO.cs"
 "Assets/Scripts/Stick/Movement.cs"
