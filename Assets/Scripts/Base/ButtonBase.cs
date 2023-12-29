@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public abstract class ButtonBase : MonoBehaviour
 {
-    
+    public static event Action<SoundType, bool> OnStickButtonSound;
     private Button button;
     protected int motionSign=1;
 
@@ -26,6 +26,8 @@ public abstract class ButtonBase : MonoBehaviour
     private void OnButtonClickEvent()
     {
         OnButtonEventHandler();
+        OnStickButtonSound?.Invoke(SoundType.StickMovement, true);
+
     }
 
     protected abstract void OnButtonEventHandler();

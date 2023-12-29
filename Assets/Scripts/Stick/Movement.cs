@@ -8,11 +8,8 @@ public class Movement : StickMovementBase
 {
     private float totalMovementAmount;
     internal float movePerClick;
-    internal bool canRush = false;
-    public static event Action<CanvasType> OnDisableStickMotionUI;
+    public static event Action<CanvasType> OnSwitchNextLevelUI;
     public static event Action<bool> OnBallInitialJump;
-    public static event Action<CameraType> OnSwitchBallCamera;
-
     public static Movement Instance {  get; private set; }
     private void Awake()
     {
@@ -21,6 +18,7 @@ public class Movement : StickMovementBase
     }
     protected override void OnEnable()
     {
+     
         UpMovementButton.OnUpMovementOfStick += StickMovement;
         DownMovementButton.OnDownMovementOfStick += StickMovement;
        
@@ -30,6 +28,7 @@ public class Movement : StickMovementBase
     {
         UpMovementButton.OnUpMovementOfStick -= StickMovement;
         DownMovementButton.OnDownMovementOfStick -= StickMovement;
+    
 
     }
 
@@ -40,12 +39,13 @@ public class Movement : StickMovementBase
         this.transform.DOMove(new Vector3(0, totalMovementAmount, 0), easeMotionResponse).SetEase(easeType);
         if (totalMovementAmount >= 20f)
         {
-            OnDisableStickMotionUI?.Invoke(CanvasType.RushUI);
-            OnSwitchBallCamera?.Invoke(CameraType.ballCamera);
-            canRush = true;
-            OnBallInitialJump?.Invoke(canRush);
+            OnSwitchNextLevelUI?.Invoke(CanvasType.NextLevelUI);
+          
+             
         }
     }
+
+   
 
 
 }

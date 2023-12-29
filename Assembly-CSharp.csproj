@@ -70,13 +70,18 @@
     <Compile Include="Assets\Scripts\Base\ButtonBase.cs" />
     <Compile Include="Assets\Scripts\SO\Stick\StickSO.cs" />
     <Compile Include="Assets\Scripts\GridSpawner\HoleConfiguration.cs" />
+    <Compile Include="Assets\Scripts\Interactions\GainerInteraction.cs" />
     <Compile Include="Assets\Scripts\Ball\BallMovement.cs" />
     <Compile Include="Assets\Scripts\Stick\StickConfiguration.cs" />
     <Compile Include="Assets\Scripts\Stick\Movement.cs" />
     <Compile Include="Assets\Scripts\Managers\Camera\VirtualCameraController.cs" />
     <Compile Include="Assets\Scripts\Base\InteractionBase.cs" />
     <Compile Include="Assets\Scripts\Managers\Camera\VirtualCameraManager.cs" />
-    <Compile Include="Assets\Scripts\Interactions\GainerInteraction.cs" />
+    <Compile Include="Assets\Scripts\UI\LevelCounter\LevelCounterManager.cs" />
+    <Compile Include="Assets\Scripts\UI\LevelButtons\RestartButton.cs" />
+    <Compile Include="Assets\Scripts\UI\LevelButtons\NextLevelButton.cs" />
+    <Compile Include="Assets\Scripts\Managers\AudioManager\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\SO\AudioSO\AudioSO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

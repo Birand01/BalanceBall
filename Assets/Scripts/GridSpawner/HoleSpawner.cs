@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshRenderer))]
 public class HoleSpawner : MonoBehaviour
 {
+    [SerializeField] private Color[] randomColors;
     [SerializeField] private GameObject holePrefab;
     private float wallLine=2;
     private float height,width;
@@ -22,6 +24,7 @@ public class HoleSpawner : MonoBehaviour
 
     private void Start()
     {
+        meshRenderer.material.color = randomColors[Random.Range(0,randomColors.Length)];
         StartCoroutine(SpawnHole());
     }
 
@@ -42,12 +45,6 @@ public class HoleSpawner : MonoBehaviour
             }
            
             wallLine += 1;
-           
-          
-
-        }
-       
-      
-       
+        }   
     }
 }

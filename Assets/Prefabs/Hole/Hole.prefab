@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 182267328711119252}
   - component: {fileID: 182267328711119253}
   - component: {fileID: 182267328711119249}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e685e8d4dca08e6418e81e2a3ab97e4a, type: 2}
+  - {fileID: 2100000, guid: f96f18654fcb0a742b51183dab201105, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

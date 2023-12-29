@@ -20,17 +20,7 @@ public class VirtualCameraManager : MonoBehaviour
         virtualCameraControllerList.ForEach(x => x.gameObject.GetComponent<CinemachineVirtualCamera>().Priority = 0);
         SwitchCamera(CameraType.stickCamera);
     }
-    private void OnEnable()
-    {
-        Movement.OnSwitchBallCamera += SwitchCamera;
-    }
-
-    private void OnDisable()
-    {
-        Movement.OnSwitchBallCamera -= SwitchCamera;
-
-    }
-
+ 
     private void SwitchCamera(CameraType cameraType)
     {
         if (lastActiveCamera != null)

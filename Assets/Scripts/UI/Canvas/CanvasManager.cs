@@ -6,8 +6,9 @@ using UnityEngine;
 public enum CanvasType
 {
    StickButtonControlUI,
-   RushUI,
-   LevelFailUI
+   GameUI,
+   LevelFailUI,
+   NextLevelUI
 }
 public class CanvasManager : MonoBehaviour
 {
@@ -20,15 +21,17 @@ public class CanvasManager : MonoBehaviour
         SwitchCanvas(CanvasType.StickButtonControlUI);
     }
     private void OnEnable()
-    {
-        HoleInteraction.OnLevelFailUI += SwitchCanvas;
-        Movement.OnDisableStickMotionUI += SwitchCanvas;
+    {      
+        Movement.OnSwitchNextLevelUI += SwitchCanvas;
+        HoleInteraction.OnSwitchLevelFailUI += SwitchCanvas;
+       
+
     }
     private void OnDisable()
-    {
-        Movement.OnDisableStickMotionUI -= SwitchCanvas;
-        HoleInteraction.OnLevelFailUI -= SwitchCanvas;
-
+    {      
+        HoleInteraction.OnSwitchLevelFailUI -= SwitchCanvas;
+        Movement.OnSwitchNextLevelUI -= SwitchCanvas;
+      
     }
 
     private void SwitchCanvas(CanvasType canvasType)
