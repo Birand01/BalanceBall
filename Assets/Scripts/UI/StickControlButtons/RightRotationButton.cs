@@ -9,7 +9,6 @@ public class RightRotationButton : ButtonBase
     protected override void OnButtonEventHandler()
     {
         OnRightRotationOfStick?.Invoke(-motionSign);
-        Debug.Log("Right Rotation button is pressed");
 
     }
 }

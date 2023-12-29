@@ -22,6 +22,7 @@ public abstract class StickMovementBase : MonoBehaviour
     }
     protected virtual void StickMovement(int movementSign) { }
     protected virtual void StickRotation(int rotationSign) { }
+  
     protected virtual IEnumerator Subscribe()
     {
         yield return null;
@@ -30,6 +31,7 @@ public abstract class StickMovementBase : MonoBehaviour
         {
             StickMovement(1); 
             StickRotation(1);
+           
         })
             .AddTo(subscriptions);
     }
