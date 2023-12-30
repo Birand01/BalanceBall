@@ -8,7 +8,7 @@ public class Movement : StickMovementBase
 {
     private float totalMovementAmount;
     internal float movePerClick;
-    public static event Action<CanvasType> OnSwitchNextLevelUI;
+   
     public static event Action<bool> OnBallInitialJump;
     public static Movement Instance {  get; private set; }
     private void Awake()
@@ -37,12 +37,7 @@ public class Movement : StickMovementBase
         totalMovementAmount += movePerClick * movementSign;
         totalMovementAmount=Mathf.Clamp(totalMovementAmount, 0f, 20f);       
         this.transform.DOMove(new Vector3(0, totalMovementAmount, 0), easeMotionResponse).SetEase(easeType);
-        if (totalMovementAmount >= 20f)
-        {
-            OnSwitchNextLevelUI?.Invoke(CanvasType.NextLevelUI);
-          
-             
-        }
+       
     }
 
    

@@ -22,16 +22,17 @@ public class CanvasManager : MonoBehaviour
     }
     private void OnEnable()
     {      
-        Movement.OnSwitchNextLevelUI += SwitchCanvas;
+        BallPosition.OnSwitchNextLevelUI += SwitchCanvas;
         HoleInteraction.OnSwitchLevelFailUI += SwitchCanvas;
-       
+        BallPosition.OnSwitchLevelFailUI += SwitchCanvas;
 
     }
     private void OnDisable()
     {      
         HoleInteraction.OnSwitchLevelFailUI -= SwitchCanvas;
-        Movement.OnSwitchNextLevelUI -= SwitchCanvas;
-      
+        BallPosition.OnSwitchNextLevelUI -= SwitchCanvas;
+        BallPosition.OnSwitchLevelFailUI -= SwitchCanvas;
+
     }
 
     private void SwitchCanvas(CanvasType canvasType)

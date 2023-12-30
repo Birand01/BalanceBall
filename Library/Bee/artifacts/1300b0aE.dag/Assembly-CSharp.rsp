@@ -363,7 +363,7 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/Zenject-PoolMonitor-Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Zenject-ReflectionBaking-Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Zenject.ref.dll"
-"Assets/Scripts/Ball/BallMovement.cs"
+"Assets/Scripts/Ball/BallPosition.cs"
 "Assets/Scripts/Base/ButtonBase.cs"
 "Assets/Scripts/Base/InteractionBase.cs"
 "Assets/Scripts/Base/StickMovementBase.cs"
